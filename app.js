@@ -2,7 +2,7 @@ const app = document.querySelector("clima-app");
 const temp = document.getElementById("temp");
 const fecha = document.querySelector("fecha");
 const hora = document.querySelector("hora");
-const condicion = document.getElementsByClassName("condicion");
+const condicion = document.getElementById("condicion");
 const nombre = document.querySelector("name");
 const icono = document.querySelector("icon");
 const nublado = document.querySelector("nublado");
@@ -55,10 +55,30 @@ function fetchClima(){
     .then(data => {
         console.log(data.current.condition.text)
         temp.innerText = `${data.current.temp_c} °`
-        condicion.innerHTML = `${data.current.condition.text} C`
 
+        let clima = data.current.condition.text
+
+        let CLIMAS = {
+            "Clear": "Despejado",
+            "Sunny": "Soleado",
+            "overcast": "Nublado",
+            "Partly cloudy": "Parcialmente nublado",
+            "Mist": "Niebla",
+            "Rain": "Lluvia",
+            "Snow": "Nieve",
+            "Thunderstorm": "Tormenta"
+        }
+        
+        condicion.innerHTML = CLIMAS[clima]
+         
     })
 }
-console.log(condicion)
+
 })
 console.log(temp)
+
+
+
+
+
+
