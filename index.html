@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6a7959df8b.js" crossorigin="anonymous"></script>
+    <link href="/style.css" rel="stylesheet">
+    <title>Buscar clima</title>
+</head>
+<body>
+    <div class="clima-app">
+        <div class="container">
+            <h3 class="brand">Clima</h3>
+            <div>
+                <h1 class="temp" id="temp">16º</h1>
+                <div class="hora-ciudad">
+                    <h1 class="name">Canelones</h1>
+                    <small>
+                        <span class="hora">16:00</span>
+                        -
+                        <span class="fecha">
+                            Lunes 4 sep
+                        </span>
+                    </small>
+                </div>
+                <div class="clima">
+                    <img src="./iconos/day/113.png" class="icon" alt="icono del clima" width="50" height="50">
+                    <span class="condicion">Nublado</span>
+                </div>
+            </div>    
+        </div>
+        <div class="panel">
+            <form id="imputLocation">
+                <input type="text" class="search" placeholder="Buscar Ubicacion">
+                <button type="submit" class="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <ul class="ciudades">
+                <li class="ciudad">
+                    Canelones
+                </li>
+                <li class="ciudad">
+                    Buenos Aires
+                </li>
+                <li class="ciudad">
+                    New York
+                </li>
+                <li class="ciudad">
+                    Madrid
+                </li>
+            </ul>
+            <ul class="detalles">
+                <h4>Detalles del tiempo</h4>
+                <li>
+                    <span>Nublado</span>
+                    <span class="nublado">89%</span>
+                </li>
+                <li>
+                    <span>Humedad</span>
+                    <span class="humedad">64%</span>
+                </li>
+                <li>
+                    <span>Viento</span>
+                    <span class="viento">30km/h</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+<script src="./app.js"></script>
+</body>
+</html>
