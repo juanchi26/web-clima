@@ -14,7 +14,6 @@ const boton = document.querySelector(".submit");
 const ciudades = document.querySelectorAll(".ciudad");
 
 let ciudad_Default = "Montevideo"
-console.log(ciudades)
 
 document.addEventListener("DOMContentLoaded", () => {
 //agrega un evento click a cada ciudad de la lista
