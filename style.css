@@ -182,3 +182,11 @@ h1, h3 {
         min-height: 40em;
     }
 }
+
+@media screen and (max-width: 450px){
+    #container > div {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+}
